@@ -7,6 +7,10 @@ const GlobalStyles = createGlobalStyle`
     margin: 0;
 }
 
+body {
+  width: 100%;
+}
+
 `;
 
 export default GlobalStyles;

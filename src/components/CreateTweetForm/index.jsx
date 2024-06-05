@@ -8,6 +8,9 @@ function CreateTweetForm({ addTweet }) {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        if (!content) {
+            return;
+        }
         addTweet(content);
         setContent("");
     };
