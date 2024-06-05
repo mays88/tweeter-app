@@ -5,7 +5,7 @@ export const TweetContainer = styled(motion.div)`
     display: flex;
     flex-direction: column;
     padding: 2em;
-    width: 28.13rem;
+    width: 35rem;
     border: 0.063em solid #d6d6d6b5;
     margin-bottom: 1em;
     box-shadow: 0.32em 0.32em 1em #00000028;
