@@ -35,9 +35,6 @@ export const TweetContainer = styled(motion.div)`
         height: 25px;
         margin: 10px;
     }
-    .closeIcon {
-        align-self: self-end;
-    }
 
     .content {
         padding: 10px;
@@ -47,4 +44,8 @@ export const TweetContainer = styled(motion.div)`
         display: flex;
         gap: 5px;
     }
+`;
+
+export const CloseButton = styled(motion.div)`
+    align-self: self-end;
 `;

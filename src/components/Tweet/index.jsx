@@ -6,18 +6,18 @@ import { MdOutlineClose } from "react-icons/md";
 import { FaRegComment } from "react-icons/fa";
 import { IoShareSocialOutline } from "react-icons/io5";
 
-import { TweetContainer } from "../styles/TweetContainer.styled";
+import { CloseButton, TweetContainer } from "../styles/TweetContainer.styled";
 
 function Tweet({ tweet, removeTweet }) {
     return (
         <TweetContainer whileHover={{ scale: 1.1 }}>
-            <div className="closeIcon">
+            <CloseButton className="closeIcon" whileHover={{ scale: 1.2 }}>
                 <MdOutlineClose
                     onClick={() => {
                         removeTweet(tweet.id);
                     }}
                 />
-            </div>
+            </CloseButton>
             <div className="userContainer">
                 <FaUserNinja className="ninjaIcon" />
                 <h4>{tweet.username}</h4>
