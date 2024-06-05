@@ -4,11 +4,11 @@ import styled from "styled-components";
 export const TweetContainer = styled(motion.div)`
     display: flex;
     flex-direction: column;
-    padding: 25px;
-    width: 450px;
-    border: 1px solid #d6d6d6b5;
-    margin-bottom: 15px;
-    box-shadow: 5px 5px 15px #00000028;
+    padding: 2em;
+    width: 28.13rem;
+    border: 0.063em solid #d6d6d6b5;
+    margin-bottom: 1em;
+    box-shadow: 0.32em 0.32em 1em #00000028;
     background-color: ${({ theme }) => theme.colors.light};
 
     .userContainer {
@@ -25,24 +25,24 @@ export const TweetContainer = styled(motion.div)`
     }
 
     .ninjaIcon {
-        margin: 10px;
+        margin: 0.63em;
     }
 
     .iconContainer {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 25px;
-        margin: 10px;
+        height: 1.6em;
+        margin: 0.63em;
     }
 
     .content {
-        padding: 10px;
+        padding: 0.63em;
     }
 
     .icons {
         display: flex;
-        gap: 5px;
+        gap: 0.32em;
     }
 `;
 
