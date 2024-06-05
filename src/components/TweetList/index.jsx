@@ -17,6 +17,7 @@ function TweetList() {
     const addTweet = (newTweet) => {
         const tweetDoc = {
             id: uuidv4(),
+            comments: 0,
             content: newTweet,
             username: "Mays88",
             likes: 0,

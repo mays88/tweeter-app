@@ -12,9 +12,13 @@ const Container = styled.form`
     #content {
         width: 450px;
         height: 200px;
+        box-shadow: 10px 10px 15px #00000028;
+        border: 0.01px solid #00000040;
+        padding: 15px;
     }
 
     .delButton {
+        margin-top: 10px;
         width: 50px;
         align-self: self-end;
     }

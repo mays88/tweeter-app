@@ -15,7 +15,7 @@ const Container = styled.div`
     width: 450px;
     border: 1px solid #d6d6d6b5;
     margin-bottom: 15px;
-
+    box-shadow: 5px 5px 15px #00000028;
     .userContainer {
         display: flex;
         align-items: center;
@@ -37,9 +37,20 @@ const Container = styled.div`
         display: flex;
         justify-content: space-between;
         align-items: center;
+        height: 25px;
+        margin: 10px;
     }
     .closeIcon {
         align-self: self-end;
+    }
+
+    .content {
+        padding: 10px;
+    }
+
+    .icons {
+        display: flex;
+        gap: 5px;
     }
 `;
 
@@ -58,21 +69,23 @@ function Tweet({ tweet, removeTweet }) {
                 <h4>{tweet.username}</h4>
             </div>
 
-            <div>{tweet.content}</div>
+            <div className="content">{tweet.content}</div>
             <div className="iconContainer">
-                <div>
+                <div className="icons">
                     <FaRegComment />
-                    {tweet.retweets}
+                    <div>{tweet.comments}</div>
                 </div>
 
-                <div>
-                    <FaRetweet className="retweetIcon" /> {tweet.retweets}
+                <div className="icons">
+                    <FaRetweet className="retweetIcon" />
+                    <div>{tweet.retweets}</div>
+                </div>
+                <div className="icons">
+                    <FaHeart className="heartIcon" />
+                    <div>{tweet.likes}</div>
                 </div>
                 <div>
-                    <FaHeart className="heartIcon" /> {tweet.likes}
-                </div>
-                <div>
-                    <IoShareSocialOutline /> {tweet.retweets}
+                    <IoShareSocialOutline />
                 </div>
             </div>
         </Container>
