@@ -1,21 +1,20 @@
 import "./App.css";
 import TweetList from "./components/TweetList";
-import styled from "styled-components";
+import { Container } from "./components/styles/Container.styled";
+import { ThemeProvider } from "styled-components";
+import { theme } from "./components/styles/themes/main.theme";
+import GlobalStyles from "./components/styles/Global";
 
-const Container = styled.main`
-    margin: auto;
-    width: 900px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-`;
 function App() {
     return (
-        <>
-            <Container>
-                <TweetList />
-            </Container>
-        </>
+        <ThemeProvider theme={theme}>
+            <>
+                <GlobalStyles />
+                <Container>
+                    <TweetList />
+                </Container>
+            </>
+        </ThemeProvider>
     );
 }
 

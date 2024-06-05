@@ -3,14 +3,8 @@ import { useState } from "react";
 import Tweet from "../Tweet";
 import CreateTweetForm from "../CreateTweetForm";
 import { v4 as uuidv4 } from "uuid";
-import styled from "styled-components";
+import { TweetListContainer } from "../styles/TweetListContainer.styled";
 
-const Container = styled.div`
-    display: flex;
-    flex-direction: column;
-    padding: 15px;
-    align-items: center;
-`;
 function TweetList() {
     const [tweets, setTweets] = useState(data);
 
@@ -32,7 +26,7 @@ function TweetList() {
     };
 
     return (
-        <Container>
+        <TweetListContainer>
             <CreateTweetForm addTweet={addTweet} />
             {tweets.map((item) => {
                 return (
@@ -43,7 +37,7 @@ function TweetList() {
                     />
                 );
             })}
-        </Container>
+        </TweetListContainer>
     );
 }
 export default TweetList;
