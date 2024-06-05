@@ -10,7 +10,7 @@ import { TweetContainer } from "../styles/TweetContainer.styled";
 
 function Tweet({ tweet, removeTweet }) {
     return (
-        <TweetContainer>
+        <TweetContainer whileHover={{ scale: 1.1 }}>
             <div className="closeIcon">
                 <MdOutlineClose
                     onClick={() => {

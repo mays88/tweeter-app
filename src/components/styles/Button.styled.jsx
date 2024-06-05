@@ -6,12 +6,12 @@ export const Button = styled(motion.input)`
     width: 50px;
     padding: 5px;
     align-self: self-end;
-    background-color: ${({ theme }) => theme.colors.primary};
+    background-color: ${({ theme }) => theme.colors.secondary};
     color: white;
     border-radius: 25px;
     border: none;
 
     &:hover {
-        background-color: ${({ theme }) => theme.colors.secondary};
+        background-color: ${({ theme }) => theme.colors.primary};
     }
 `;

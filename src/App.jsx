@@ -10,7 +10,7 @@ function App() {
         <ThemeProvider theme={theme}>
             <>
                 <GlobalStyles />
-                <Container layout>
+                <Container>
                     <TweetList />
                 </Container>
             </>

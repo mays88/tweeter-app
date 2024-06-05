@@ -1,6 +1,7 @@
+import { motion } from "framer-motion";
 import styled from "styled-components";
 
-export const TweetContainer = styled.div`
+export const TweetContainer = styled(motion.div)`
     display: flex;
     flex-direction: column;
     padding: 25px;
@@ -8,10 +9,7 @@ export const TweetContainer = styled.div`
     border: 1px solid #d6d6d6b5;
     margin-bottom: 15px;
     box-shadow: 5px 5px 15px #00000028;
-
-    &:hover {
-        width: 470px;
-    }
+    background-color: ${({ theme }) => theme.colors.light};
 
     .userContainer {
         display: flex;
