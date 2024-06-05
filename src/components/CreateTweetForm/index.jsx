@@ -7,7 +7,6 @@ function CreateTweetForm({ addTweet }) {
     const [content, setContent] = useState("");
 
     const handleSubmit = (e) => {
-        console.log(e);
         e.preventDefault();
         addTweet(content);
         setContent("");
@@ -23,7 +22,7 @@ function CreateTweetForm({ addTweet }) {
                 value={content}
                 onChange={(e) => setContent(e.target.value)}
             />
-            <Button type="submit" value="Post" />
+            <Button type="submit" value="Post" whileHover={{ scale: 0.9 }} />
         </CreateFormContainer>
     );
 }
