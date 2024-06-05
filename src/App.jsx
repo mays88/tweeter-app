@@ -1,14 +1,20 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
+import TweetList from "./components/TweetList";
+import styled from "styled-components";
 
+const Container = styled.main`
+    margin: auto;
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+`;
 function App() {
-    const [count, setCount] = useState(0);
-
     return (
         <>
-            <h1>Tweeter App</h1>
+            <Container>
+                <TweetList />
+            </Container>
         </>
     );
 }
